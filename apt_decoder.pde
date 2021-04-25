@@ -32,7 +32,7 @@ double[] getLowPassFirCoeffs(float sampleRate, float halfAmplFreq, int numTaps) 
     coefs[i] = val;
   }
 
-  for (var i = 0; i < numTaps; ++i) {
+  for (int i = 0; i < numTaps; ++i) {
     coefs[i] /= sum;
   }
   
